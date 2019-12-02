@@ -34,6 +34,12 @@ a:hover {
   border: 2px solid white;
 }
 
+.clean {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 header {
   background-color: #2b2a2f;
   color: white;
@@ -374,5 +380,74 @@ header .header-content-img img {
   font-size: 18px;
   color: white;
   font-weight: 400;
+}
+
+.skills {
+  background-color: #2b2a2f;
+  color: white;
+  padding-bottom: 110px;
+}
+
+.skills-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skills-desc-design {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+
+.skills-desc-design > p:nth-child(1) {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.skills-desc-design .line {
+  height: 2px;
+  background-color: #fe7e11;
+  width: 110px;
+  margin-bottom: 15px;
+}
+
+.skills-desc-design-progress > div {
+  position: relative;
+}
+
+.skills-desc-design-progress > div span {
+  position: absolute;
+}
+
+.skills-desc-design-progress p {
+  font-size: 18px;
+}
+
+.skills-desc-design-progress .progress {
+  height: 5px;
+  margin-top: 50px;
+}
+
+.skills-desc-design-progress .progress .progress-bar {
+  background-color: #201f24;
+}
+
+.skills-desc-coding {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+
+.skills-desc-coding > p:nth-child(1) {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.skills-desc-coding .line {
+  height: 2px;
+  background-color: #fe7e11;
+  width: 110px;
+  margin-bottom: 15px;
 }
 /*# sourceMappingURL=style.css.map */
