@@ -333,4 +333,46 @@ header .header-content-img img {
   font-size: 15px;
   font-weight: 400;
 }
+
+.ratings {
+  background-color: #2e2d32;
+  padding: 110px 0;
+  color: white;
+}
+
+.ratings-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ratings-wrap-inner {
+  text-align: center;
+}
+
+.ratings-wrap-inner span {
+  width: 70px;
+  padding: 10px 15px;
+  border: 1px solid #201f24;
+  border-radius: 50%;
+  background-color: #201f24;
+  color: white;
+  font-size: 36px;
+}
+
+.ratings-wrap-inner p:nth-child(2) {
+  font-size: 36px;
+  color: #fe7e11;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.ratings-wrap-inner p:nth-child(3) {
+  font-size: 18px;
+  color: white;
+  font-weight: 400;
+}
 /*# sourceMappingURL=style.css.map */
