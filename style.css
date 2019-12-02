@@ -5,6 +5,10 @@
   transition: all 0.2s;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .active {
   color: #fe7e11;
 }
@@ -38,6 +42,15 @@ a:hover {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.triangle {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 60px solid transparent;
+  border-top-color: #828184;
 }
 
 header {
@@ -449,5 +462,36 @@ header .header-content-img img {
   background-color: #fe7e11;
   width: 110px;
   margin-bottom: 15px;
+}
+
+.hire_me {
+  background-color: #2e2d32;
+  color: white;
+  padding: 100px 0;
+  position: relative;
+}
+
+.hire_me-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hire_me-content-text {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+
+.hire_me-content-text p:nth-child(1) {
+  font-size: 36px;
+  color: #fe7e11;
+  font-weight: bold;
+  line-height: 54px;
+}
+
+.hire_me-content-text p:nth-child(2) {
+  font-size: 15px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
