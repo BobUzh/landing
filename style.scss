@@ -388,3 +388,90 @@ header{
 
 }
 //----------------------// HIRE ME
+//---------------------- RESUME
+.resume{
+    background-color: #2b2a2f;
+    color: white;
+    padding-bottom: 110px;
+    &-content{
+        display: flex;
+        .line{
+            height: 2px;
+            background-color: $orange;
+            width: 110px;
+            margin-bottom: 15px;
+        }
+        &-education{
+            flex: 5;
+            &>p:nth-child(1){
+                font-size: 30px;
+                margin-bottom: 5px;
+                font-weight: 500;
+                color: $gray1;
+            }
+            &>p:nth-child(3){
+                font-size: 15px;
+                margin-bottom: 15px;
+                font-weight: 400;
+                color: $gray;
+                line-height: 25px;
+            }
+        }
+        &-experience{
+            flex: 5;
+            &>p:nth-child(1){
+                font-size: 30px;
+                margin-bottom: 5px;
+                font-weight: 500;
+                color: $gray1;
+            }
+            &>p:nth-child(3){
+                font-size: 15px;
+                margin-bottom: 15px;
+                font-weight: 400;
+                color: $gray;
+                line-height: 25px;
+            }
+        }
+        &-card{
+            width: 100%;
+            position: relative;
+            background-color: #27262b;
+            padding: 30px;
+            margin-top: 30px;
+            font-family: 'Lato', sans-serif;
+            &:hover{
+                cursor: pointer;
+                box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.75);
+            }
+            .triangle{
+                transform: rotate(135deg);
+                border: 30px solid transparent;
+                border-top-color: $orange;
+                top: -30px;
+                left: -30px;
+            }
+            .resume_data{
+                font-size: 14px;
+                color: $gray;
+                font-weight: 400;
+            }
+            
+            .resume_name{
+                font-size: 20px;
+                font-weight: bold;
+                color: $orange;
+            }
+            .resume_text{
+                font-size: 15px;
+                font-weight: 400;
+                color: $gray;
+                line-height: 25px;
+            }
+            
+
+        }
+    }
+
+}
+//----------------------// RESUME
