@@ -475,3 +475,59 @@ header{
 
 }
 //----------------------// RESUME
+//---------------------- SLIDER
+.slider{
+    color: white;
+    background-color: #2e2d32;
+    padding-bottom: 50px;
+    &-wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-slide{
+            background-color: #27262b;
+            text-align: center;
+            width: 570px;
+            &-content{
+                position: relative;
+                top: -50px;
+                padding: 0 30px;
+                img{
+                    height: 100px;
+                    padding: 0 12px;
+                    border: 5px solid white;
+                    border-radius: 50%;
+                    margin-bottom: 30px;
+                }  
+                p:nth-child(2){
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: $gray1;
+                }
+                p:nth-child(3){
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: $gray1;
+                }
+                p:nth-child(4){
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: $gray;
+                    line-height: 25px;
+                }
+            }
+
+        }
+        .sl_li{
+            display: inline-block;
+            width: 25px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: $gray;
+            margin: 50px 10px;
+        }
+    }
+
+}
+//----------------------// SLIDER
