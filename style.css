@@ -942,4 +942,8 @@ footer .footer-soc-icon span:hover {
   cursor: pointer;
   color: #fe7e11;
 }
+
+footer .footer-soc-icon span:nth-child(1) {
+  color: #4267B2;
+}
 /*# sourceMappingURL=style.css.map */
