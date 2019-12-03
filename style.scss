@@ -607,3 +607,86 @@ header{
     }
 }
 //----------------------// BLOG
+//----------------------// CONTACT
+.contact{
+    color: white;
+    background-color:#2b2a2f ;
+    padding-bottom: 100px;
+    &-wrap{
+        display: flex;
+        align-items: stretch;
+        &-data{
+            flex: 4;
+            .my_contact{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 74%;
+                span{
+                    display: inline-block;
+                }
+                .contact_icon{
+                    display: flex;
+                    align-items: center;
+                    &>span{
+                        padding: 0px 10px;
+                        border: 5px solid $orange;
+                        border-radius: 50%;
+                        background-color: transparent;
+                        color: white;
+                        font-size: 36px;
+                        align-self: flex-start;
+                    }
+                    .contact_text{
+                        margin: 0 15px;
+                        &>span{
+                            font-family: 'Lato', sans-serif;
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 30px;
+                        }
+                    }
+                }
+
+            }
+        }
+        &-form{
+            flex: 8;
+            .contact_form{
+                display: flex;
+                flex-direction: column;
+                color: white;
+                &-input{
+                    display: flex;
+                    flex: 1;
+                    input{
+                        flex: 1;
+                        background-color: transparent;
+                        padding: 15px;
+                        border-color: #413f3f;
+                        outline-color: $orange;
+                        color: white;
+                        border-width: thin;
+                    }
+                    input:nth-child(1){
+                        margin-right: 15px;
+                    }
+                    input:nth-child(2){
+                        margin-left: 15px;
+                    }
+                }
+                textarea{
+                    flex: 1;
+                    background-color: transparent;
+                    margin: 15px 0;
+                    border-color: #413f3f;
+                    outline-color: $orange;
+                }
+                .button{
+                    align-self: flex-start;
+                }
+            }
+        }
+    }
+}
+//----------------------// CONTACT
