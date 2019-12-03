@@ -531,3 +531,36 @@ header{
 
 }
 //----------------------// SLIDER
+//----------------------// PHOTO GALERY
+.photo-galery{
+    color: white;
+    background-color: #2b2a2f;
+    padding-bottom: 100px;
+    &-wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-tab{
+            ul{
+                display: flex;
+            }
+            li{
+                list-style: none;
+                a{
+                    margin: 0 20px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        &-img{
+            img{
+                float: left;
+                margin: 15px;
+                transition: filter 0.3s;
+            }
+        }
+    }
+}
+//----------------------// PHOTO GALERY
