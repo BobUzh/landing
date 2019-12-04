@@ -47,6 +47,23 @@ a{
     border: 60px solid transparent;
     border-top-color: #828184;
 }
+.my_slick-dots li{
+    // display: inline-block;
+    width: 25px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: $gray;
+    button::before{
+        color: transparent;
+    }
+    // margin: 50px 10px;
+}
+.my_slick-dots li.slick-active  {
+    background-color: $orange;
+    button::before{
+        color: transparent;
+    }
+}
 //---------------------- HEADER
 header{
     // height: 100vh;
@@ -480,15 +497,34 @@ header{
     color: white;
     background-color: #2e2d32;
     padding-bottom: 50px;
+    &-inner{
+        text-align: center;
+        .sl_li{
+            display: inline-block;
+            width: 25px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: $gray;
+            margin: 50px 10px;
+        }
+        
+    }
+
     &-wrap{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        width: 570px;
+        margin: 0 auto;
+        padding-top: 50px;
+
         &-slide{
             background-color: #27262b;
             text-align: center;
             width: 570px;
+           
+            margin: 0 auto;
             &-content{
                 position: relative;
                 top: -50px;
@@ -498,6 +534,7 @@ header{
                     padding: 0 12px;
                     border: 5px solid white;
                     border-radius: 50%;
+                    margin: auto;
                     margin-bottom: 30px;
                 }  
                 p:nth-child(2){
@@ -519,14 +556,7 @@ header{
             }
 
         }
-        .sl_li{
-            display: inline-block;
-            width: 25px;
-            height: 10px;
-            border-radius: 5px;
-            background-color: $gray;
-            margin: 50px 10px;
-        }
+
     }
 
 }
@@ -718,9 +748,6 @@ footer{
                     color: $orange;
                 }
 
-            }
-            span:nth-child(1){
-                color: #4267B2;
             }
         }
     }
