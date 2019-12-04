@@ -409,11 +409,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="sl">
-                <span class="sl_li"></span>
-                <span class="sl_li active_bg"></span>
-                <span class="sl_li"></span>
-            </div> -->
         </div>
     </div>
 </section>
@@ -428,20 +423,32 @@
         <div class="photo-galery-wrap">
             <div class="photo-galery-wrap-tab">
                 <ul id="tab_photo">
-                    <li><a href="#" data-name="all">all work</a></li>
-                    <li><a href="#" data-name="web">web design</a></li>
-                    <li><a href="#" data-name="graphic">graphic design</a></li>
-                    <li><a href="#" data-name="praint">praint</a></li>
-                    <li><a href="#" data-name="illustration">illustration</a></li>
+                    <li><a href="#" data-filter="*">all work</a></li>
+                    <li><a href="#" data-filter=".illustration">web design</a></li>
+                    <li><a href="#" data-filter=".web">graphic design</a></li>
+                    <li><a href="#" data-filter=".graphic">praint</a></li>
+                    <li><a href="#" data-filter=".praint">illustration</a></li>
                 </ul>
             </div>
             <div class="photo-galery-wrap-img">
-                <img src="img/11.jpg" alt="" class="all illustration">
-                <img src="img/22.jpg" alt="" class="all web">
-                <img src="img/33.jpg" alt="" class="all web">
-                <img src="img/44.jpg" alt="" class="all graphic praint">
-                <img src="img/55.jpg" alt="" class="all praint">
-                <img src="img/66.jpg" alt="" class="all web illustration graphic">
+                <div class="item illustration">
+                    <img src="img/11.jpg" alt="" >
+                </div>
+                <div class="item web">
+                    <img src="img/22.jpg" alt="">
+                </div>
+                <div class="item web">
+                    <img src="img/33.jpg" alt="">
+                </div>
+                <div class="item graphic praint">
+                    <img src="img/44.jpg" alt="">
+                </div>
+                <div class="item praint">
+                    <img src="img/55.jpg" alt="">
+                </div>
+                <div class="item graphic">
+                    <img src="img/88.jpg" alt="">
+                </div>
             </div>
         </div>
 
@@ -548,6 +555,7 @@
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+  <script src="isotope.pkgd.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="app.js"></script>
 </body>

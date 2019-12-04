@@ -720,13 +720,19 @@ header .header-content-img img {
   text-transform: uppercase;
 }
 
-.photo-galery-wrap-img img {
+.photo-galery-wrap-img {
+  width: 100%;
+}
+
+.photo-galery-wrap-img .item {
+  display: block;
+  width: 303px;
   float: left;
   margin: 15px;
-  -webkit-transition: -webkit-filter 0.3s;
-  transition: -webkit-filter 0.3s;
-  transition: filter 0.3s;
-  transition: filter 0.3s, -webkit-filter 0.3s;
+}
+
+.photo-galery-wrap-img .item img {
+  width: 100%;
 }
 
 .blog {
