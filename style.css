@@ -458,10 +458,8 @@ header .header-content-img {
 
 @media (max-width: 480px) {
   .ratings-wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -472,6 +470,7 @@ header .header-content-img {
 @media (max-width: 480px) {
   .ratings-wrap-inner {
     margin-top: 20px;
+    width: 50%;
   }
 }
 

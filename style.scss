@@ -358,12 +358,13 @@ header{
         display: flex;
         justify-content: space-around;
         @media (max-width: $screen-xs) {
-            flex-direction: column;
+            flex-wrap: wrap;
         }
         &-inner{
             text-align: center;
             @media (max-width: $screen-xs) {
                 margin-top: 20px;
+                width: 50%;
             }
             span{
                 width: 70px;
