@@ -412,6 +412,16 @@ header .header-content-img {
   }
 }
 
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .about-desc-content-btn {
+    width: 100%;
+    text-align: center;
+  }
+  .about-desc-content-btn .button {
+    width: 70%;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 992px) {
   .about-desc-content-btn {
     display: -webkit-box;
@@ -825,13 +835,18 @@ header .header-content-img {
 .slider-wrap-slide {
   background-color: #27262b;
   text-align: center;
-  width: 570px;
   margin: 0 auto;
 }
 
 @media (max-width: 576px) {
   .slider-wrap-slide {
     width: 90vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .slider-wrap-slide {
+    width: 570px;
   }
 }
 

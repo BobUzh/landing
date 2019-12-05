@@ -314,6 +314,15 @@ header{
                 @media (max-width: $screen-sm) {
                     text-align: center;
                 }
+                @media (min-width: $screen-sm) and (max-width: 767.98px) {
+                    // display: flex;
+                    // flex-wrap: wrap;
+                    width: 100%;
+                    text-align: center;
+                    .button{
+                        width: 70%;
+                    }
+                }
                 @media (min-width: $screen-md) and (max-width: $screen-lg) {
                     display: flex;
                     width: 100%;
@@ -648,10 +657,13 @@ header{
         &-slide{
             background-color: #27262b;
             text-align: center;
-            width: 570px;
+           
             margin: 0 auto;
             @media (max-width: $screen-sm) {
-                width: 90vw;;
+                width: 90vw;
+            }
+            @media (min-width: $screen-md) {
+                width: 570px;
             }
             &-content{
                 position: relative;
