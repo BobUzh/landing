@@ -21,6 +21,9 @@ $screen-md:768px;
 $screen-lg:992px;
 $screen-xl:1200px;
 $screen-xxl:1400px;
+// @media (min-width: 577px) and (max-width: 768px) {
+
+// }
 
 
 
@@ -89,7 +92,6 @@ body{
 
 //---------------------- HEADER
 header{
-    // height: 100vh;
     background-color: #2b2a2f;
     color: white;
     .header{
@@ -101,9 +103,6 @@ header{
             flex: 1;
             justify-content: space-between;
             align-items: center;
-            @media (max-width: $screen-xs) {
-                margin-bottom: 50px;
-            }
             .logo{
                 flex: 5;
                 color: $orange;
@@ -112,9 +111,12 @@ header{
             }
            .menu {
                flex: 7;
-               @media (max-width: $screen-xs) {
-                display: none;
+               @media (max-width: $screen-sm) {
+                    display: none;
                }
+            //    @media (min-width: 577px) and (max-width: 768px) {
+            //          display: none;
+            //     }
                 ul {
                     display: flex;
                     justify-content: space-between;
@@ -133,23 +135,21 @@ header{
         &-content{
             display: flex;
             flex: 5;
-            @media (max-width: $screen-xs) {
-                flex-direction: column;
+            @media (max-width: $screen-sm) {
+                display: block;
+                flex: none;
             }
             &-text{
                 flex: 7;
                 display: flex;
                 align-items: center;
-                @media (max-width: $screen-xs) {
-                    height: 40vh;
-                }
                 p{
                     font-size: 20px;
                     .name{
                         font-size: 60px;
                         color: $orange;
                         font-weight: bold;
-                        @media (max-width: $screen-xs) {
+                        @media (max-width: $screen-sm) {
                             font-size: 30px;
                         }
                     }
@@ -159,13 +159,13 @@ header{
                         line-height: 36px;
                         color: $gray;
                         font-weight: 400;
-                        @media (max-width: $screen-xs) {
+                        @media (max-width: $screen-sm) {
                             font-size: 16px;
                         }
                     }
                 }
                 .button{
-                    @media (max-width: $screen-xs) {
+                    @media (max-width: $screen-sm) {
                         margin-top: 15px;
                     }
                 }
@@ -173,11 +173,11 @@ header{
             &-img{
                 flex: 5;
                 align-self: flex-end;
-                @media (max-width: $screen-xs) {
-                    flex: none;
-                    height: 40vh;
+                @media (max-width: $screen-sm) {
+                    height: 50vh;
                     img{
                         height: 100%;
+                        float: right;
                     }
                 }
                 img{
@@ -234,7 +234,7 @@ header{
     &-desc{
         display: flex;
         &-img{
-            @media (max-width: $screen-xs) {
+            @media (max-width: $screen-sm) {
                 display: none;
             }
             flex: 4;
@@ -283,7 +283,7 @@ header{
                 }
             }
             &-btn{
-                @media (max-width: $screen-xs) {
+                @media (max-width: $screen-sm) {
                     text-align: center;
                 }
                 .button:nth-child(2){
@@ -357,12 +357,12 @@ header{
     &-wrap{
         display: flex;
         justify-content: space-around;
-        @media (max-width: $screen-xs) {
+        @media (max-width: $screen-sm) {
             flex-wrap: wrap;
         }
         &-inner{
             text-align: center;
-            @media (max-width: $screen-xs) {
+            @media (max-width: $screen-sm) {
                 margin-top: 20px;
                 width: 50%;
             }
@@ -399,7 +399,7 @@ header{
     padding-bottom: 110px;
     &-desc{
         display: flex;
-        @media (max-width: $screen-xs) {
+        @media (max-width: $screen-sm) {
             flex-direction: column;
         }
         &-design{
@@ -435,7 +435,7 @@ header{
         }
         &-coding{
             flex: 5;
-            @media (max-width: $screen-xs) {
+            @media (max-width: $screen-sm) {
                 padding-top: 100px;
             }
             &>p:nth-child(1){
@@ -459,14 +459,14 @@ header{
     color: white;
     padding: 100px 0;
     position: relative;
-    @media (max-width: $screen-xs) {
+    @media (max-width: $screen-sm) {
         span{
             display: none;
         }
     }
     &-content{
         display: flex;
-        @media (max-width: $screen-xs) {
+        @media (max-width: $screen-sm) {
             flex-direction: column;
             text-align: center;
         }
@@ -497,7 +497,7 @@ header{
     padding-bottom: 110px;
     &-content{
         display: flex;
-        @media (max-width: $screen-xs) {
+        @media (max-width: $screen-sm) {
             flex-direction: column;
         }
         .line{
@@ -524,7 +524,7 @@ header{
         }
         &-experience{
             flex: 5;
-            @media (max-width: $screen-xs) {
+            @media (max-width: $screen-sm) {
                 margin-top: 100px;
             }
             &>p:nth-child(1){
@@ -615,7 +615,7 @@ header{
             text-align: center;
             width: 570px;
             margin: 0 auto;
-            @media (max-width: $screen-xs) {
+            @media (max-width: $screen-sm) {
                 width: 90vw;;
             }
             &-content{
@@ -667,7 +667,7 @@ header{
             
             ul{
                 display: flex;
-                @media (max-width: $screen-xs) {
+                @media (max-width: $screen-sm) {
                     flex-direction: column;
                     justify-content: center;
                     text-align: center;
@@ -685,16 +685,20 @@ header{
         }
         &-img{
             width: 100%;
-           
-            .item{
-                display: block;
-                width: 303px;
-                float: left;
-                margin: 15px;
-                @media (max-width: $screen-xs) {
-                    width: 100%;
-                    margin: 5px;
-                }
+            
+            .grid-item {
+              width: 30%;
+            }
+            .grid-item{
+                // display: block;
+                // width: 20vw;
+                // height: 300px;
+                // float: left;
+                margin: 5px;
+                // @media (max-width: $screen-sm) {
+                //     width: 100%;
+                //     margin: 5px;
+                // }
                 img{
                     width: 100%;
                 }
@@ -710,7 +714,7 @@ header{
     padding-bottom: 100px;
     &-wrap{
         display: flex;
-        @media (max-width: $screen-xs) {
+        @media (max-width: $screen-sm) {
             flex-direction: column;
         }
         &-card{
@@ -718,7 +722,7 @@ header{
             text-align: center;
             background-color: #27262b ;
             margin: 0 15px;
-            @media (max-width: $screen-xs) {
+            @media (max-width: $screen-sm) {
                 margin: 20px 15px;
             }
             img{
@@ -760,7 +764,7 @@ header{
     &-wrap{
         display: flex;
         align-items: stretch;
-        @media (max-width: $screen-xs) {
+        @media (max-width: $screen-sm) {
             flex-direction: column;
         }
         &-data{
@@ -776,7 +780,7 @@ header{
                 .contact_icon{
                     display: flex;
                     align-items: center;
-                    @media (max-width: $screen-xs) {
+                    @media (max-width: $screen-sm) {
                         margin-bottom: 50px;
                     }
                     &>span{
@@ -810,7 +814,7 @@ header{
                 &-input{
                     display: flex;
                     flex: 1;
-                    @media (max-width: $screen-xs) {
+                    @media (max-width: $screen-sm) {
                         flex-direction: column;
                         input{
                             margin: 15px;
@@ -833,7 +837,7 @@ header{
                     }
                 }
                 textarea{
-                    @media (max-width: $screen-xs) {
+                    @media (max-width: $screen-sm) {
                         margin: 15px;
                     }
                     flex: 1;
@@ -845,7 +849,7 @@ header{
                 }
                 .button{
                     align-self: flex-start;
-                    @media (max-width: $screen-xs) {
+                    @media (max-width: $screen-sm) {
                         align-self: center;
                     }
                 }
@@ -863,7 +867,7 @@ footer{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @media (max-width: $screen-xs) {
+        @media (max-width: $screen-sm) {
             flex-direction: column;
             text-align: center;
         }

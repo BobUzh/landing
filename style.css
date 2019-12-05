@@ -103,12 +103,6 @@ header .header-menu {
           align-items: center;
 }
 
-@media (max-width: 480px) {
-  header .header-menu {
-    margin-bottom: 50px;
-  }
-}
-
 header .header-menu .logo {
   -webkit-box-flex: 5;
       -ms-flex: 5;
@@ -124,7 +118,7 @@ header .header-menu .menu {
           flex: 7;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   header .header-menu .menu {
     display: none;
   }
@@ -157,12 +151,12 @@ header .header-content {
           flex: 5;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   header .header-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: block;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
   }
 }
 
@@ -178,12 +172,6 @@ header .header-content-text {
           align-items: center;
 }
 
-@media (max-width: 480px) {
-  header .header-content-text {
-    height: 40vh;
-  }
-}
-
 header .header-content-text p {
   font-size: 20px;
 }
@@ -194,7 +182,7 @@ header .header-content-text p .name {
   font-weight: bold;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   header .header-content-text p .name {
     font-size: 30px;
   }
@@ -208,13 +196,13 @@ header .header-content-text p .profession {
   font-weight: 400;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   header .header-content-text p .profession {
     font-size: 16px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   header .header-content-text .button {
     margin-top: 15px;
   }
@@ -228,15 +216,13 @@ header .header-content-img {
       align-self: flex-end;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   header .header-content-img {
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
-    height: 40vh;
+    height: 50vh;
   }
   header .header-content-img img {
     height: 100%;
+    float: right;
   }
 }
 
@@ -301,7 +287,7 @@ header .header-content-img {
   position: relative;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .about-desc-img {
     display: none;
   }
@@ -369,7 +355,7 @@ header .header-content-img {
           flex: 4;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .about-desc-content-btn {
     text-align: center;
   }
@@ -456,7 +442,7 @@ header .header-content-img {
       justify-content: space-around;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .ratings-wrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -467,7 +453,7 @@ header .header-content-img {
   text-align: center;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .ratings-wrap-inner {
     margin-top: 20px;
     width: 50%;
@@ -510,7 +496,7 @@ header .header-content-img {
   display: flex;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .skills-desc {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -564,7 +550,7 @@ header .header-content-img {
           flex: 5;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .skills-desc-coding {
     padding-top: 100px;
   }
@@ -589,7 +575,7 @@ header .header-content-img {
   position: relative;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .hire_me span {
     display: none;
   }
@@ -601,7 +587,7 @@ header .header-content-img {
   display: flex;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .hire_me-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -641,7 +627,7 @@ header .header-content-img {
   display: flex;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .resume-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -684,7 +670,7 @@ header .header-content-img {
           flex: 5;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .resume-content-experience {
     margin-top: 100px;
   }
@@ -780,7 +766,7 @@ header .header-content-img {
   margin: 0 auto;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .slider-wrap-slide {
     width: 90vw;
   }
@@ -845,7 +831,7 @@ header .header-content-img {
   display: flex;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .photo-galery-wrap-tab ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -873,21 +859,15 @@ header .header-content-img {
   width: 100%;
 }
 
-.photo-galery-wrap-img .item {
-  display: block;
-  width: 303px;
-  float: left;
-  margin: 15px;
+.photo-galery-wrap-img .grid-item {
+  width: 30%;
 }
 
-@media (max-width: 480px) {
-  .photo-galery-wrap-img .item {
-    width: 100%;
-    margin: 5px;
-  }
+.photo-galery-wrap-img .grid-item {
+  margin: 5px;
 }
 
-.photo-galery-wrap-img .item img {
+.photo-galery-wrap-img .grid-item img {
   width: 100%;
 }
 
@@ -903,7 +883,7 @@ header .header-content-img {
   display: flex;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .blog-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -921,7 +901,7 @@ header .header-content-img {
   margin: 0 15px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .blog-wrap-card {
     margin: 20px 15px;
   }
@@ -975,7 +955,7 @@ header .header-content-img {
           align-items: stretch;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .contact-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1017,7 +997,7 @@ header .header-content-img {
           align-items: center;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .contact-wrap-data .my_contact .contact_icon {
     margin-bottom: 50px;
   }
@@ -1071,7 +1051,7 @@ header .header-content-img {
           flex: 1;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .contact-wrap-form .contact_form-input {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1114,7 +1094,7 @@ header .header-content-img {
   color: white;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .contact-wrap-form .contact_form textarea {
     margin: 15px;
   }
@@ -1125,7 +1105,7 @@ header .header-content-img {
       align-self: flex-start;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .contact-wrap-form .contact_form .button {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -1151,7 +1131,7 @@ footer .footer {
           align-items: center;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   footer .footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

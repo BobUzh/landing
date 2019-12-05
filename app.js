@@ -1,8 +1,10 @@
 $(document).ready(function(){
 
     $('.photo-galery-wrap-img').isotope({
-        itemSelector:'.item',
-        layoutMode:'fitRows'
+        itemSelector:'.grid-item',
+        layoutMode:'fitRows',
+        
+        
     });
     $('.photo-galery-wrap-tab ul li a').click(function(){
         console.log($(this))
