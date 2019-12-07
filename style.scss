@@ -583,6 +583,11 @@ header{
             @media (max-width: $screen-md) {
                 margin-top: 100px;
             }
+            @media (min-width: $screen-md) and (max-width: $screen-lg) {
+                &>div:nth-child(6){
+                    padding-bottom: 60px;
+                }
+                }
             &>p:nth-child(1){
                 font-size: 30px;
                 margin-bottom: 5px;

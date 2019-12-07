@@ -773,6 +773,12 @@ header .header-content-img {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .resume-content-experience > div:nth-child(6) {
+    padding-bottom: 60px;
+  }
+}
+
 .resume-content-experience > p:nth-child(1) {
   font-size: 30px;
   margin-bottom: 5px;
