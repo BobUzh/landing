@@ -43,6 +43,12 @@ body .button:focus {
   outline: none;
 }
 
+@media (max-width: 767.98px) {
+  body .button {
+    margin-top: 20px;
+  }
+}
+
 body .clean {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -259,6 +265,12 @@ header .header-content-img {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .about-title {
+    padding: 50px 10px;
+  }
+}
+
 .about-title p {
   margin: 0;
 }
@@ -295,6 +307,12 @@ header .header-content-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 767.98px) {
+  .about-desc {
+    padding: 15px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -339,6 +357,12 @@ header .header-content-img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+@media (max-width: 768px) {
+  .about-desc-clean {
+    display: none;
+  }
 }
 
 .about-desc-content {
@@ -907,6 +931,7 @@ header .header-content-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
 }
 
 @media (max-width: 576px) {
@@ -1241,6 +1266,7 @@ header .header-content-img {
 }
 
 .contact-wrap-form .contact_form textarea {
+  padding: 15px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;

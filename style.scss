@@ -63,7 +63,10 @@ body{
         border: 2px solid white;
         outline:none;
         &:focus{
-            outline: none;;
+            outline: none;
+        }
+        @media (max-width: 767.98px) {
+            margin-top: 20px;
         }
     }
     .clean{
@@ -211,6 +214,9 @@ header{
         font-weight: bold;
         margin: 0 auto;
         text-align: center;
+        @media (max-width: $screen-md) {
+            padding: 50px 10px;
+        }
         p{
             margin: 0;
         }
@@ -243,6 +249,9 @@ header{
     }
     &-desc{
         display: flex;
+        @media (max-width: 767.98px) {
+            padding: 15px;
+        }
         @media (min-width: $screen-md) and (max-width: $screen-lg) {
             position: relative;
             }
@@ -270,6 +279,9 @@ header{
         }
         &-clean{
             flex: 1;
+            @media (max-width: $screen-md) {
+                display: none;
+            }
         }
         &-content{
             flex: 6;
@@ -714,10 +726,12 @@ header{
             
             ul{
                 display: flex;
+                padding: 0;
                 @media (max-width: $screen-sm) {
                     flex-direction: column;
                     justify-content: center;
                     text-align: center;
+                    
                 }
                 @media (min-width: 577px) and (max-width: $screen-lg) {
                     flex-wrap: wrap;
@@ -741,15 +755,7 @@ header{
               width: 30%;
             }
             .grid-item{
-                // display: block;
-                // width: 20vw;
-                // height: 300px;
-                // float: left;
                 margin: 5px;
-                // @media (max-width: $screen-sm) {
-                //     width: 100%;
-                //     margin: 5px;
-                // }
                 img{
                     width: 100%;
                 }
@@ -920,6 +926,7 @@ header{
                     }
                 }
                 textarea{
+                    padding: 15px;
                     @media (max-width: $screen-md) {
                         margin: 15px;
                     }
